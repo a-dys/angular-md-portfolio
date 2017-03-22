@@ -5,7 +5,14 @@ import 'angular-animate';
 import 'angular-aria';
 import 'angular-material';
 
-export default angular.module( 'starter-app', [ 'ngMaterial' ] )
-    .run(() => {
-    console.log(`Starting the 'starter-app' module`);
-});
+import AppController from 'src/AppController';
+import Users from 'src/users/Users';
+
+export default angular.module( "starter-app", [ 'ngMaterial', Users.name ] )
+    .config(($mdIconProvider) => {
+        $mdIconProvider
+            .defaultIconSet("./assets/svg/avatars.svg", 128)
+            .icon("menu", "./assets/svg/menu.svg", 24)
+            .icon("share", "./assets/svg/share.svg", 24);
+    })
+    .controller('AppController', AppController);
