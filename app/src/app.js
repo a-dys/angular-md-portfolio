@@ -6,13 +6,7 @@ import 'angular-aria';
 import 'angular-material';
 
 import AppController from 'src/AppController';
-import Users from 'src/users/Users';
+import Projects from 'src/projects/Projects';
 
-export default angular.module( "starter-app", [ 'ngMaterial', Users.name ] )
-    .config(($mdIconProvider) => {
-        $mdIconProvider
-            .defaultIconSet("./assets/svg/avatars.svg", 128)
-            .icon("menu", "./assets/svg/menu.svg", 24)
-            .icon("share", "./assets/svg/share.svg", 24);
-    })
+export default angular.module( "starter-app", [ 'ngMaterial', Projects.name ] )
     .controller('AppController', AppController);

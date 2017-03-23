@@ -24,12 +24,20 @@
       About me
     </md-sidenav>
     <md-content flex id="content">
-      <h1>Portfolio</h1>
-      <div layout="row" layout-margin layout-padding layout-wrap ng-cloak>
-        <md-whiteframe ng-repeat="user in app.users" class="md-whiteframe-2dp" flex="100" layout layout-align="center center">
-          <md-icon md-svg-icon="{{user.avatar}}" class="avatar"></md-icon>
-          <div>{{user.name}}</div>
-        </md-whiteframe>
+      <div>
+        <md-card ng-repeat="project in app.projects">
+          <md-card-title>
+            <md-card-title-text flex="70">
+              <span class="md-headline">{{project.name}}</span>
+              <p>
+                {{project.desc}}
+              </p>
+            </md-card-title-text>
+            <md-card-title-media flex>
+              <img ng-src="assets/images/{{project.image}}" class="md-card-image" alt="{{project.name}}"/>
+            </md-card-title-media>
+          </md-card-title>
+        </md-card>
       </div>
     </md-content>
   </div>
