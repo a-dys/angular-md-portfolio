@@ -11,12 +11,16 @@ function ProjectsDataService($q) {
     {
       name: 'Loteria Paragonowa',
       image: 'loteria_thumb.jpg',
-      desc: 'Współpraca przy tworzeniu strony Loterii Paragonowej - w zakres moich zadań wchodziło stworzenie widoków na podstawie projektów graficznych, przystosowanie strony do wyświetlania na urządzeniach mobilnych.'
+      desc: 'Współpraca przy tworzeniu strony Loterii Paragonowej - w zakres moich zadań wchodziło stworzenie widoków ' +
+      'na podstawie projektów graficznych, przystosowanie strony do wyświetlania na urządzeniach mobilnych.',
+      url: 'https://loteriaparagonowa.gov.pl/'
     },
     {
       name: 'Kantor Gold',
       image: 'kantor_thumb.jpg',
-      desc: 'Stworzenie strony www typu onepage na podstawie dostarczonych makiet. Integracja z API obsługującym ceny wymiany walut.'
+      desc: 'Stworzenie strony www typu onepage na podstawie dostarczonych makiet. ' +
+      'Integracja z API obsługującym ceny wymiany walut.',
+      url: 'http://www.kantor-gold.pl/'
     },
     {
       name: 'Monoc Druk',

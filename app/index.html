@@ -13,22 +13,20 @@
 </head>
 
 <body ng-cloak layout="column" ng-controller="AppController as app ">
-  <md-toolbar layout="row" class="md-toolbar-tools">
-    <md-button class="menu md-icon-button">
-      <md-icon md-svg-icon="menu"></md-icon>
-    </md-button>
-    <h1>Angular Material - Starter App</h1>
-  </md-toolbar>
   <div flex layout="row">
     <md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp" layout-padding>
       <img src="assets/images/logo.png">
       <div class="social-wrap">
-        <a href="#" class="icon-cube icon-cube--linkedin">twitter</a>
-        <a href="#" class="icon-cube icon-cube--email">facebook</a>
+        <a href="https://www.linkedin.com/in/adadys/" class="icon-cube icon-cube--linkedin">LinkedIn</a>
+        <a href="mailto:adit.ada.dys@gmail.com" class="icon-cube icon-cube--email">Send e-mail</a>
+      </div>
+      <div>
+        Nowoczesne i przejrzyste strony internetowe.
       </div>
     </md-sidenav>
     <md-content flex id="content">
       <div>
+        <h1>Realizacje</h1>
         <md-card ng-repeat="project in app.projects">
           <md-card-title>
             <md-card-title-text flex="70">
@@ -38,7 +36,13 @@
               </p>
             </md-card-title-text>
             <md-card-title-media flex>
-              <img ng-src="assets/images/{{project.image}}" class="md-card-image" alt="{{project.name}}"/>
+              <!--<portfolio></portfolio>-->
+              <div class="flash-effect">
+                <a ng-if="project.url" href="{{project.url}}" target="_blank">
+                  <img ng-src="assets/images/{{project.image}}" class="md-card-image" alt="{{project.name}}"/>
+                </a>
+                <img ng-if="!project.url" ng-src="assets/images/{{project.image}}" class="md-card-image" alt="{{project.name}}"/>
+              </div>
             </md-card-title-media>
           </md-card-title>
         </md-card>
