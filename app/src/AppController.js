@@ -1,14 +1,14 @@
 /**
- * Main App Controller for the Angular Material Starter App
+ * Main App Controller for the Adit App
  * @param ProjectsDataService
- * @param $mdSidenav
  * @constructor
  */
-function AppController(ProjectsDataService, $mdSidenav, $mdBottomSheet, $log) {
+function AppController(ProjectsDataService) {
     var self = this;
 
     self.selected = null;
     self.projects = [];
+    self.contactEmail = "ada.dys@adit.net.pl";
 
     // Load all registered users
 
@@ -20,5 +20,5 @@ function AppController(ProjectsDataService, $mdSidenav, $mdBottomSheet, $log) {
         });
 }
   
-export default [ 'ProjectsDataService', '$mdSidenav', '$mdBottomSheet', '$log', AppController ];
+export default [ 'ProjectsDataService', AppController ];
 
