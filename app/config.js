@@ -3,10 +3,27 @@ System.config({
   transpiler: "traceur",
   paths: {
     "app/*": "src/*.js",
-    "users/*": "src/users/*.js",
     "material-start/*": "src/*.js",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
+  },
+  bundles: {
+    "build.js": [
+      "material-start/boot/boot",
+      "material-start/app",
+      "material-start/projects/Projects",
+      "material-start/projects/services/ProjectsDataService",
+      "material-start/AppController",
+      "github:angular/bower-material@master.js",
+      "github:angular/bower-material@master/index.js",
+      "github:angular/bower-material@master/angular-material.js",
+      "github:angular/bower-angular-aria@1.5.8.js",
+      "github:angular/bower-angular-aria@1.5.8/angular-aria.js",
+      "github:angular/bower-angular@1.5.8.js",
+      "github:angular/bower-angular@1.5.8/angular.js",
+      "github:angular/bower-angular-animate@1.5.8.js",
+      "github:angular/bower-angular-animate@1.5.8/angular-animate.js"
+    ]
   },
 
   map: {
