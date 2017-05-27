@@ -16,6 +16,12 @@ function ProjectsDataService($q) {
       url: 'https://loteriaparagonowa.gov.pl/'
     },
     {
+      name: 'Bistro Dorota',
+      image: 'dorota_thumb.jpg',
+      desc: 'Strona reklamowa poznańskiej restauracji, z możliwością samodzielnej edycji karty dań.',
+      url: 'http://www.dorota.poznan.pl/'
+    },
+    {
       name: 'Kantor Gold',
       image: 'kantor_thumb.jpg',
       desc: 'Stworzenie strony www typu onepage na podstawie dostarczonych makiet. ' +
