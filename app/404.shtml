@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <title>ADIT Ada Dyś</title>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+    <link rel="stylesheet" href="./jspm_packages/github/angular/bower-material@master/angular-material.css"/>
+    <link rel="stylesheet" href="./assets/app.css"/>
+</head>
+<body ng-cloak layout="column" ng-controller="AppController as app ">
+<div flex layout="row">
+    <md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp" layout-padding>
+        <img src="assets/images/logo.png">
+        <div class="md-title">ADIT</div>
+        <div>
+            Projektowanie i tworzenie stron www oraz dedykowanych aplikacji internetowych.
+        </div>
+        <div class="social-wrap">
+            <a href="https://www.linkedin.com/in/adadys/" class="icon-cube icon-cube--linkedin">LinkedIn</a>
+            <a href="mailto:{{app.contactEmail}}" class="icon-cube icon-cube--email">Send e-mail</a>
+        </div>
+    </md-sidenav>
+    <md-content flex id="content">
+        <div>
+            <h1>Strona nie istnieje</h1>
+            <div>Skoro tu jednak jesteś, zapraszam do obejrzenia animacji <i>Elaphants Dream</i>.</div>
+            <video width="640" height="480" controls>
+                <source src="assets/media/ElephantsDream.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="md-caption">Źródło: <a href="https://orange.blender.org/">https://orange.blender.org/</a></div>
+        </div>
+    </md-content>
+</div>
+<script src="build.js"></script>
+</body>
+</html>
