@@ -70105,6 +70105,11 @@ $__System.register("b", [], function($__export) {
     self.selected = null;
     self.projects = [];
     self.contactEmail = "ada.dys@adit.net.pl";
+    var audio = new Audio('assets/media/blop.mp3');
+    self.playSound = function() {
+      console.log("Blop");
+      audio.play();
+    };
     ProjectsDataService.loadAllProjects().then(function(projects) {
       self.projects = [].concat(projects);
       self.selected = projects[0];
